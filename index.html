@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts/toggle.js"></script>
+<link rel="stylesheet" href="styles/normalize.css">
+<script src="https://kit.fontawesome.com/effb38b558.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/home-styles.css">
+<title>Play2Learn</title>
+</head>
+<body>
+<header>
+    
+  
+  <nav>
+    <ul>
+      <li class="logo"><a href= "index.html"><h1>Play2Learn</h1></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a>Games</a>
+        <ul>
+          <li><a href="games/anagram-hunt.html">Anagram Hunt</a></li>
+          <li><a href="games/math-facts.html">Math Facts Practice</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main> 
+  <section>
+      <div class="happy-clients">
+        <h1>Happy Clients Say...</h1>
+      </div>
+    <div class="row-outer">
+        <div class="container">
+          <div class="animated-heading">
+           <h1><span id="words">''I'm literally so addicted!!'' - Francine P. </span></h1>
+          </div>
+        </div>
+    </div>
+      <script>
+        (function () {
+          var words = [" ''As a Math addict, I enjoy getting my fix on Math Facts Practice!!'' - Chris M.",
+          "''Pretty cool.'' - Jane D.","''Very Fun! I'd rather do this than mindless scrolling.'' - Larry R." ],
+          i = 0;
+          setInterval(function(){ $('#words').fadeOut(function(){
+              $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+            }); },10000)
+        })();
+      </script>
+  </section>
+
+  <section id="games">
+    <h2>Games</h2>
+    <article>
+      <h3>Anagram Hunt</h3>
+       <p>Anagram hunt is one of our top brain games! What is an Anagram? An anagram is a word made 
+           by rearranging the letters of another word. In Anagram Hunt you have 30 seconds to find 
+           as many anagrams as you can!
+       </p>
+        <button class="green-button" onclick="location.href='games/anagram-hunt.html'"
+        type="button">Play Now
+        </button>
+    </article>
+    <article>
+      <h3>Math Fact Practice</h3>
+      <p>Sick of wasting time on social media? Why not sharpen your Math skills with Math Facts Practice! Build speed and confidence!
+          Choose from addition, subtraction, multiplication and division. See how many you can solve in 30 seconds!
+      </p>
+      <button class="green-button" onclick="location.href='games/math-facts.html'"
+        type="button">Play Now
+      </button>
+    </article>
+   </section>
+  
+</main>
+<footer>
+  <p>&copy; 2022 Play2Learn </p>
+  <address>
+    <a href="/contact-us.html">
+        <i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.instagram.com">
+        <i class="fa-brands fa-square-instagram"></i></a>
+    <a href="https://twitter.com">
+        <i class="fa-brands fa-square-twitter"></i></a>
+    <a href="https://www.facebook.com">
+        <i class="fa-brands fa-square-facebook"></i></a>
+  </address>
+</footer>
+</body>
+</html>

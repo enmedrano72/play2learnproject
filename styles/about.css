@@ -1,0 +1,17 @@
+#about-us {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+  color: black;
+  text-align: center;
+  padding: 150px 500px;
+  background: white;
+  margin: 30px;
+  line-height: 1.5;
+}
+
+.main-paragraph {
+  font-size: 20px;
+  margin: auto;
+  font-weight: bold;
+}

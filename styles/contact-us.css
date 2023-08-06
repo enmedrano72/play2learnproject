@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+}
+
+form {
+    margin: auto;
+    width: 500px;
+    text-align: left;
+    padding: 3rem 3rem 10rem 3rem;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 3rem 3rem 0 3rem;
+    margin: auto;
+}
+
+.labels {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'] {
+    width: 100%;
+    border: 2px solid black;
+    margin: 0 0 10px 0;
+}
+
+
+textarea {
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+ input[type='submit'] {
+    float: right;  
+}
+

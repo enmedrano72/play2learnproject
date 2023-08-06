@@ -1,0 +1,101 @@
+body {
+    background: white;
+}
+
+form {
+    margin: auto;
+    width: 500px;
+    padding: 3rem 3rem 10rem 3rem;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 3rem 3rem 0 3rem;
+    margin: auto;
+}
+
+.login-form {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'] {
+    width: 100%;
+    border: 2px solid black;
+    margin: 0 0 10px 0;
+}
+
+.labels {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+}
+
+label[for='agecheck'] {
+    display: inline;
+    margin: 0 0 0 5px;
+}
+
+input[type='checkbox'] {
+    margin: 0 5px;
+    width: auto;
+    float: left;
+}
+.RegisterLnk {
+    color: dodgerblue;
+    text-decoration: underline;
+    text-align: left;
+}
+ 
+.RegisterLnk:hover {
+    cursor: pointer;
+}
+
+.modal {
+  display: none; 
+  position: absolute; 
+  top: 0;
+  margin:auto;
+  width: 100%; 
+  padding-top: 35px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 5% auto;
+  border: 1px solid white;
+  width: 70%; 
+  text-align:center;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+
+}
+
+.age-check {
+    text-align: left;
+    padding: 10px;
+}
+
+#register-button { 
+    float: right;
+    border-style: none;
+    outline-style: none;
+    
+}
+
+#login-button { 
+    float: right;
+    border-style: none;
+    outline-style: none;
+    
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts/toggle.js"></script>
+<link rel="stylesheet" href="../styles/normalize.css">
+<script src="https://kit.fontawesome.com/effb38b558.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../styles/math-facts.css">
+<title>Play2Learn</title>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li class="logo"><a href= "index.html"><h1>Play2Learn</h1></a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a>Games</a>
+        <ul>
+          <li><a href="../games/anagram-hunt.html">Anagram Hunt</a></li>
+          <li><a href="../games/math-facts.html">Math Facts Practice</a></li>
+        </ul>
+      </li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+ <div id="mfp">Math Facts Practice</div>
+ <div class="menu-button">
+    <label for="operation"><b>Operation:</b></label>
+    <select name="operation" id="operation">
+        <option value="+">Addition</option>
+        <option value="-">Subtraction</option>
+        <option value="*">Multiplication</option>
+        <option value="/">Division</option>  
+    </select>
+    <button class="green-button" id = "goBtn">Go</button>
+ </div>
+
+  <div class="steps">
+      <div class= "grid-item">1. Select Operation</div>
+      <div class= "grid-item">2. Press <b>Go.</b></div>
+      <div class= "grid-item">3. How many problems can you solve in 30 seconds?</div>
+  </div>
+
+  <!--Modal 1-->
+<div id="gameModal" class="game-modal">
+  <div class="modal-content">
+    <div class="modalh1">Math Facts Practice</div>
+      <div>
+      <p>
+        <span id="operator" class="output" style="font-size:30px"></span>
+      </p>
+        <input type="text" class="input" id="answerInput">
+          <div class="grid-container">
+            <button type="button" class="btn-input">1</button>
+            <button type="button" class="btn-input">2</button>
+            <button type="button" class="btn-input">3</button>
+            <button type="button" class="btn-input">4</button>
+            <button type="button" class="btn-input">5</button>
+            <button type="button" class="btn-input">6</button>
+            <button type="button" class="btn-input">7</button>
+            <button type="button" class="btn-input">8</button>
+            <button type="button" class="btn-input">9</button>
+            <button type="button" class="btn-input">0</button>
+            <button type="button" id="clear" class="btn-input">Clear</button>
+          </div> 
+          <div id="score" style="font-size:30px">Score: <span id="scoreValue">0</span></div>
+          <div id="time-left" style="font-size:30px">Time Left: <span id="beginCountdown">30</span> seconds</div> 
+      </div>
+  </div>
+</div>
+
+<!--Modal 2-->
+<div id="exampleModalToggle2" class="timeup-grid">
+  <div class="tu-grid-item" id="mfp-title">Math Facts Practice</div>
+  <div class="tu-grid-item" id="timesUp">Times up!</div>
+  <div class="tu-grid-item" id="yourFinalScoreIs">Your final score is:</div>  
+  <div class="tu-grid-item" id="score2" style="font-size:60px"><span id="finalScoreValue"></span></div> 
+    <button id="close" class="green-button">Play Again</button>
+</div>
+
+ <footer>
+    <p>&copy; 2022 Play2Learn </p>
+    <address>
+      <a href="/contact-us.html">
+          <i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.instagram.com">
+          <i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://twitter.com">
+          <i class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://www.facebook.com">
+          <i class="fa-brands fa-square-facebook"></i></a>
+    </address>
+  </footer>
+  <script src="../js/math-facts.js"></script> 
+  </body>
+  </html>

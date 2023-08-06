@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts/toggle.js"></script>
+<link rel="stylesheet" href="styles/normalize.css">
+<script src="https://kit.fontawesome.com/effb38b558.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/login.css">
+<title>Play2Learn</title>
+</head>
+
+<body>
+<header> 
+  <nav>
+    <ul>
+      <li class="logo"><a href= "index.html"><h1>Play2Learn</h1></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a>Games</a>
+        <ul>
+          <li><a href="games/anagram-hunt.html">Anagram Hunt</a></li>
+          <li><a href="games/math-facts.html">Math Facts Practice</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <h2>Login</h2>
+    <form method="post" action="https//" onsubmit="submitAlert()">
+    <div class="login-form">
+     <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" size="15">
+     </div>
+     <div>
+      <label for="pw">Password:</label>
+      <input type="password" name="pw" id="pw" size="15">
+     </div>
+      
+       <input class="green-button" type="submit" name="submitbutton" id="login-button"
+        value="Login">
+      
+       <div>
+        <p onclick="document.getElementById('login-modal').style.display='block'" style="width:auto;" class="RegisterLnk">Need an account? Register.</p>
+       </div>
+      </div>
+   </form>
+    <div id="login-modal" class="modal">  
+     <form class="modal-content" method="post" action="https.#" onsubmit="submitAlert()">
+      <div class="container">
+         <h2>Register</h2>
+         <div class="labels">
+         <label for="firstname">First Name:</label>
+         <input type="text" name="firstname" id="firstname" size="15">
+      
+         <label for="lastname">Last Name:</label>
+         <input type="text" name="lastname" id="lastname" size="15">
+      
+         <label for="email">Email:</label>
+         <input type="email" name="email" id="email2" size="15">
+      
+         <label for="pw1">Password:</label>
+         <input type="password" name="pw1" id="pw1" size="15">
+      
+         <label for="pw2">Repeat Password:</label>
+         <input type="password" name="pw2" id="pw2" size="15">
+         </div>
+         <div class="age-check">
+          <input type="checkbox" name="agecheck" id="agecheck" required>
+          <label for="agecheck">I am over 13 and like gaming.</label><br>
+         </div>
+         <br>
+          <input class="green-button" type="submit" name="submitbutton" id="register-button" value="Register">
+         <br>
+            <div>
+                 <p onclick="document.getElementById('login-modal').style.display='none'" class="RegisterLnk">Already have an account? Login.</p>
+            </div>  
+      </div>
+    </form>
+    </div>
+    <script>
+        function submitAlert() {
+          alert("The form was submitted");
+        };
+        // Gets Register modal
+        var modal = document.getElementById('login-modal');
+    </script>
+    
+  <footer>
+    <p>&copy; 2022 Play2Learn </p>
+    <address>
+      <a href="/contact-us.html">
+          <i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.instagram.com">
+          <i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://twitter.com">
+          <i class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://www.facebook.com">
+          <i class="fa-brands fa-square-facebook"></i></a>
+    </address>
+  </footer>
+  </body>
+  </html>
